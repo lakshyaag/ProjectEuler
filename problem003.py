@@ -14,15 +14,15 @@ largestPrimeFactor(600851475143) should return 6857.
 
 def largestPrimeFactor(number):
     prime = 2
-    max = 1
+    maxPrime = 1
     while prime <= number:
         if number % prime == 0:
-            max = prime
+            maxPrime = prime
             number = number / prime
         else:
             prime = prime + 1
 
-    return print(max)
+    return print(maxPrime)
 
 
 largestPrimeFactor(2)
